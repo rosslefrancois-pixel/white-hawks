@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sep 20, 2026 — White Hawks at CT Polar Bears</title>
+<meta name="description" content="Weekly recaps, scoring and season record for the Worcester White Hawks 19 Black.">
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+<meta name="googlebot" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ice:#EEF4F8;
+    --surface:#FFFFFF;
+    --ink:#10161B;
+    --jersey:#14181C;
+    --steel:#67798A;
+    --line-blue:#14487F;
+    --sky:#62B6E8;
+    --sky-deep:#2E8FC8;
+    --edge:#D8E3EB;
+    --display:"Big Shoulders Display","Haettenschweiler","Arial Narrow",sans-serif;
+    --body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--ice);color:var(--ink);
+    font-family:var(--body);font-size:16px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 0 64px}
+  section{padding:0 20px}
+
+  /* ---------- HERO / RECORD ---------- */
+  .hero{
+    background:var(--jersey);color:#fff;padding:28px 20px 0;position:relative;overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;left:-40%;top:-120px;width:340px;height:340px;
+    border:2px solid rgba(255,255,255,.07);border-radius:50%;
+  }
+  .crest{
+    display:flex;align-items:center;gap:18px;position:relative;margin:0;
+  }
+  .crest img{
+    width:clamp(84px,24vw,124px);height:auto;flex:0 0 auto;
+    filter:drop-shadow(0 0 0 transparent);
+  }
+  .crest .txt{min-width:0}
+  .crest h1{
+    font-family:var(--display);font-weight:800;font-size:clamp(30px,8.5vw,46px);
+    line-height:.9;margin:0;color:#fff;
+  }
+  .crest h1 em{display:block;font-style:normal;color:var(--sky)}
+  .league{
+    margin:10px 0 0;font-size:12.5px;font-weight:500;color:#93A9BA;position:relative;
+  }
+  .record{
+    margin-top:24px;padding:20px 0 22px;border-top:3px solid var(--sky);
+    display:flex;gap:8px;align-items:flex-end;position:relative;
+  }
+  .rec-cell{flex:0 0 auto;text-align:left;padding-right:22px}
+  .rec-num{
+    font-family:var(--display);font-weight:800;font-size:clamp(56px,20vw,96px);
+    line-height:.8;display:block;font-variant-numeric:tabular-nums;
+  }
+  .rec-lab{font-size:11px;font-weight:600;color:#93A9BA;letter-spacing:.06em;margin-top:8px;display:block}
+  .streak{
+    margin-left:auto;align-self:center;background:var(--sky);color:var(--jersey);
+    font-weight:700;font-size:13px;padding:6px 12px;border-radius:2px;
+  }
+  .redline{height:6px;background:var(--sky)}
+
+  /* ---------- FINAL ---------- */
+  .final{
+    background:var(--surface);margin:20px 20px 0;border:1px solid var(--edge);
+  }
+  .final-head{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:10px 16px;border-bottom:1px solid var(--edge);
+  }
+  .final-head b{font-size:12px;font-weight:700;color:var(--sky-deep);letter-spacing:.08em}
+  .final-head span{font-size:12px;color:var(--steel)}
+  .team-row{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:14px 16px;gap:12px;
+  }
+  .team-row + .team-row{border-top:1px solid var(--edge)}
+  .team-row .nm{font-weight:600;font-size:17px}
+  .team-row .sc{
+    font-family:var(--display);font-weight:800;font-size:44px;line-height:1;
+    font-variant-numeric:tabular-nums;color:var(--steel);
+  }
+  .winner{background:linear-gradient(90deg,rgba(98,182,232,.18),transparent)}
+  .winner .nm{border-left:4px solid var(--sky-deep);padding-left:10px;margin-left:-14px}
+  .winner .sc{color:var(--ink)}
+  .venue{padding:11px 16px;border-top:1px solid var(--edge);font-size:13px;color:var(--steel)}
+
+  /* ---------- TYPE ---------- */
+  h2{
+    font-family:var(--display);font-weight:700;font-size:30px;line-height:1.05;
+    margin:44px 0 4px;
+  }
+  .kicker{margin:0 0 18px;color:var(--steel);font-size:14px}
+  .story p{margin:0 0 16px;max-width:62ch}
+  .story .lede{font-size:19px;font-weight:500;line-height:1.5}
+
+  /* ---------- TIMELINE ---------- */
+  .tl{list-style:none;margin:0;padding:0;position:relative}
+  .tl::before{content:"";position:absolute;left:7px;top:6px;bottom:14px;width:2px;background:var(--edge)}
+  .per{
+    position:relative;padding:18px 0 8px 30px;font-family:var(--display);
+    font-weight:700;font-size:17px;color:var(--line-blue);
+  }
+  .per::before{
+    content:"";position:absolute;left:0;top:24px;width:16px;height:2px;background:var(--line-blue);
+  }
+  .goal{
+    position:relative;padding:0 0 16px 30px;display:flex;gap:12px;align-items:baseline;
+  }
+  .goal::before{
+    content:"";position:absolute;left:1px;top:7px;width:14px;height:14px;border-radius:50%;
+    background:var(--jersey);border:3px solid var(--ice);box-shadow:0 0 0 2px var(--jersey);
+  }
+  .goal.away::before{background:var(--ice);box-shadow:0 0 0 2px var(--steel)}
+  .goal .body{flex:1}
+  .clock{font-size:12px;color:var(--steel);font-variant-numeric:tabular-nums}
+  .scorer{font-weight:600;display:block;margin-top:1px}
+  .helpers{font-size:14px;color:var(--steel)}
+  .gw{
+    display:inline-block;margin-left:7px;padding:1px 6px;background:var(--sky);
+    color:var(--jersey);font-size:11px;font-weight:700;vertical-align:1px;
+  }
+  .tally{
+    font-family:var(--display);font-weight:700;font-size:19px;
+    font-variant-numeric:tabular-nums;color:var(--steel);white-space:nowrap;
+  }
+  .goal:not(.away) .tally{color:var(--line-blue)}
+
+  /* ---------- TABLES ---------- */
+  table{width:100%;border-collapse:collapse;font-size:15px;background:var(--surface)}
+  caption{text-align:left;font-size:13px;color:var(--steel);padding:0 0 8px}
+  th{
+    text-align:left;font-size:12px;font-weight:700;color:var(--steel);
+    padding:9px 12px;border-bottom:2px solid var(--jersey);
+  }
+  td{padding:10px 12px;border-bottom:1px solid var(--edge)}
+  td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+  .jersey{
+    display:inline-block;min-width:26px;padding:1px 5px;margin-right:8px;
+    background:var(--jersey);color:#fff;font-size:12px;font-weight:700;text-align:center;
+    font-variant-numeric:tabular-nums;
+  }
+
+  /* ---------- GAME BALLS ---------- */
+  .balls{list-style:none;margin:0;padding:0}
+  .balls li{
+    background:var(--surface);border-left:5px solid var(--sky);
+    padding:14px 16px;margin-bottom:10px;
+  }
+  .balls b{font-family:var(--display);font-weight:700;font-size:21px;display:block;line-height:1.15}
+  .balls span{font-size:15px;color:#3C4B58}
+
+  /* ---------- ROSTER ---------- */
+  .roster{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));
+    gap:1px;background:var(--edge);border:1px solid var(--edge);
+  }
+  .roster div{background:var(--surface);padding:9px 11px;font-size:14px}
+  .roster .g{background:#F6FAFD}
+  .pos{font-size:11px;font-weight:700;color:var(--line-blue);margin-left:5px}
+
+  footer{
+    margin-top:48px;padding:20px;border-top:3px solid var(--jersey);
+    font-size:13px;color:var(--steel);
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .rec-num{animation:drop .5s cubic-bezier(.2,.7,.3,1) both}
+    .rec-cell:nth-child(2) .rec-num{animation-delay:.07s}
+    .rec-cell:nth-child(3) .rec-num{animation-delay:.14s}
+    @keyframes drop{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:none}}
+  }
+
+  .backlink{display:inline-block;padding:16px 0 0;font-size:14px;color:var(--sky-deep);
+    text-decoration:none;font-weight:600}
+  .gamehead{background:var(--jersey);color:#fff;padding:18px 20px;display:flex;align-items:center;gap:14px}
+  .gamehead img{width:54px;height:auto;flex:0 0 auto}
+  .gamehead .t{font-family:var(--display);font-weight:700;font-size:23px;line-height:1.05;margin:0}
+  .gamehead .s{font-size:12px;color:#93A9BA;margin:3px 0 0}
+  td a,.logrow a{color:var(--line-blue);font-weight:600;text-decoration:none;
+    border-bottom:1px solid var(--sky)}
+  .gfga{display:flex;gap:26px;margin:0 0 16px}
+  .gfga div{font-size:12px;font-weight:600;color:var(--steel);letter-spacing:.04em}
+  .gfga b{font-family:var(--display);font-size:26px;color:var(--ink);display:block;line-height:1}
+  .away-tag{font-size:11px;font-weight:700;color:var(--steel);letter-spacing:.06em;
+    display:inline-block;margin-left:8px;vertical-align:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="gamehead">
+    <img src="data:image/png;base64,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" alt="Worcester White Hawks crest" width="320" height="320">
+    <div>
+      <p class="t">Game 2 &middot; September 20, 2026</p>
+      <p class="s">Worcester White Hawks 19 Black &middot; record after this game 2-0-0</p>
+    </div>
+  </div>
+  <div class="redline"></div>
+
+  <section><a class="backlink" href="index.html">&larr; Back to current</a></section>
+
+  <div class="final">
+    <div class="final-head"><b>FINAL</b><span>Sunday, September 20, 2026</span></div>
+    <div class="team-row winner">
+      <span class="nm">White Hawks<span class="away-tag">AWAY</span></span><span class="sc">3</span>
+    </div>
+    <div class="team-row">
+      <span class="nm">CT Polar Bears 19 Minor 2</span><span class="sc">1</span>
+    </div>
+    <div class="venue">Choate Hockey Rink · Hemenway Rink · 12:30 PM puck drop</div>
+  </div>
+
+  <section class="story">
+    <h2>All of it in the first</h2>
+    <p class="kicker">Game 2 · Called as it happened</p>
+    <p class="lede">Good afternoon from the Hemenway Rink at Choate, where the White Hawks are on the road against the Connecticut Polar Bears — and where, if you came in late, you missed the entire scoring output of the Worcester White Hawks.</p>
+
+    <p>Because it all happens in the opening period. 7:57 remaining — CLAIRE LEFRANCOIS, on her own, nobody to hand an assist to. One-nothing Worcester.</p>
+
+    <p>3:07 to go — SLOAN GENDRON, also unassisted, and it's two. And with 2:03 left in that very same period, Gendron AGAIN! Her second of the afternoon, the third Worcester goal of the period, and not one of the three needed a helper. Three goals, three solo efforts. You do not see that on a scoresheet very often.</p>
+
+    <p>Second period, and the Polar Bears begin to lean on them. Camryn Connor to the box for hooking at 11:03 — the only penalty Worcester takes all afternoon — and the Hawks kill it off. But with twenty-nine seconds left in that second period, LEAH CHEN, from Helena Dulaney, and Connecticut has a pulse heading to the third.</p>
+
+    <p>And that is where Elizabeth Brigham settles this. The full forty-five minutes for the Worcester netminder, a third period in which the Polar Bears get nothing at all, and a hockey game that ends the way the first period said it would.</p>
+
+    <p>One penalty for Worcester, none at all for the Polar Bears — a clean, quick afternoon, seventy minutes from puck drop to handshake. Gendron's first of the two, at 3:07 of the first, stands as your game-winner. And Sloan Gendron now has four goals in two games. The White Hawks are two-and-oh.</p>
+  </section>
+
+  <section>
+    <h2>How it happened</h2>
+    <p class="kicker">Times shown are remaining in the period</p>
+    <ul class="tl">
+      <li class="per">1st Period</li>
+      <li class="goal">
+        <div class="body">
+          <span class="clock">7:57 left</span>
+          <span class="scorer">Claire Lefrancois</span>
+          <span class="helpers">Unassisted</span>
+        </div>
+        <span class="tally">1&ndash;0</span>
+      </li>
+      <li class="goal">
+        <div class="body">
+          <span class="clock">3:07 left</span>
+          <span class="scorer">Sloan Gendron<span class="gw">GW</span></span>
+          <span class="helpers">Unassisted</span>
+        </div>
+        <span class="tally">2&ndash;0</span>
+      </li>
+      <li class="goal">
+        <div class="body">
+          <span class="clock">2:03 left</span>
+          <span class="scorer">Sloan Gendron</span>
+          <span class="helpers">Unassisted</span>
+        </div>
+        <span class="tally">3&ndash;0</span>
+      </li>
+      <li class="per">2nd Period</li>
+      <li class="goal away">
+        <div class="body">
+          <span class="clock">0:29 left</span>
+          <span class="scorer">Leah Chen <em>(Polar Bears)</em></span>
+          <span class="helpers">Helena Dulaney</span>
+        </div>
+        <span class="tally">3&ndash;1</span>
+      </li>
+      <li class="per">3rd Period</li>
+      <li class="goal away" style="opacity:.6">
+        <div class="body">
+          <span class="clock">&mdash;</span>
+          <span class="scorer">No scoring</span>
+          <span class="helpers">Brigham holds the lead</span>
+        </div>
+        <span class="tally">3&ndash;1</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Game balls</h2>
+    <ul class="balls">
+      <li><b>Sloan Gendron</b><span>Two more goals, both unassisted, including the game-winner. Four goals in two games to open the season.</span></li>
+      <li><b>Elizabeth Brigham</b><span>The full forty-five minutes and one goal against, in a game the Polar Bears spent two periods trying to get back into.</span></li>
+      <li><b>Claire Lefrancois</b><span>Opened the scoring unassisted, and has now scored in both games of the season.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Points</h2>
+    <table>
+      <caption>White Hawks scoring, September 20 &mdash; all three goals unassisted</caption>
+      <thead>
+        <tr><th>Player</th><th class="n">G</th><th class="n">A</th><th class="n">P</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="jersey">23</span>Sloan Gendron<span class="gw">GW</span></td><td class="n">2</td><td class="n">0</td><td class="n">2</td></tr>
+        <tr><td><span class="jersey">37</span>Claire Lefrancois</td><td class="n">1</td><td class="n">0</td><td class="n">1</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Penalty box</h2>
+    <table>
+      <caption>1.5 penalty minutes &middot; one minor &middot; Polar Bears took none</caption>
+      <thead>
+        <tr><th>Player</th><th>Infraction</th><th>Per</th><th class="n">Min</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="jersey">88</span>Camryn Connor</td><td>Hooking</td><td>2nd</td><td class="n">1.5</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section><a class="backlink" href="index.html">&larr; Back to current</a></section>
+
+  <footer>
+    Worcester White Hawks 19 Black · New England Girls Hockey League, 19 American.<br>
+    Recaps compiled from official game sheets.
+  </footer>
+
+</div>
+</body>
+</html>
